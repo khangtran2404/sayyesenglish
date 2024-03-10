@@ -1,0 +1,15 @@
+<label> 
+    <span class="text">Your name</span>
+    [text* your-name] </label>
+
+<label> 
+    <span class="text">Your email</span>
+    [email* your-email] </label>
+
+<label> 
+    <span class="text">Your phone</span>
+    [tel* your-phone] </label>
+
+<div class="btn-submit">
+    [submit "Send"]
+</div>

@@ -1,0 +1,84 @@
+.wpcf7 {
+    // Error
+    form.invalid,
+    form.aborted,
+    form.unaccepted,
+    form.failed {
+        .wpcf7-response-output {
+            display: none !important;
+        }
+    }
+    .wpcf7-validates-as-required.error {
+        border-color: red;
+    }
+    .wpcf7-not-valid-tip {
+        position: absolute;
+        bottom: -30px;
+        font-size: 14px;
+        font-family: $font__family-gilroy-400;
+        width: 100%;
+        color: red !important;
+    }
+    input[type=text],
+    input[type=tel],
+    input[type=email] {
+        height: 41px;
+        border: none !important;
+        border-bottom: 1px solid $color__primary !important;
+        @include transition(all .3s ease-in-out);
+    }
+    textarea {
+        height: 120px;
+        border: none !important;
+        border-bottom: 1px solid $color__primary !important;
+    }
+    input,
+    textarea {
+        width: 100%;
+        font-size: 16px !important;
+        font-family: $font__family-gilroy-400 !important;
+        background-color: transparent !important;
+        @include transition(all .3s ease-out);
+        &:focus-visible {
+            outline: none;
+        }
+    }
+    .btn-submit {
+        margin-top: 40px;
+        position: relative;
+        width: fit-content;
+    }
+    input[type=submit] {
+        width: fit-content !important;
+        height: unset !important;
+        padding: 13px 45px !important;
+        border-radius: 50px;
+    }
+    .wpcf7-spinner {
+        top: 6px;
+    }
+    /* Change the white to any color */
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 30px #faede5 inset !important;
+    }
+}
+
+form.sent {
+    position: relative;
+    .wpcf7-response-output {
+        color: green !important;
+        border: none;
+        font-size: 14px !important;
+        line-height: 24px !important;
+        font-family: $font__family-gilroy-400 !important;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}

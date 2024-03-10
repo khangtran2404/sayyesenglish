@@ -1,0 +1,229 @@
+.page-template-contact {
+    .header-volcano {
+        .group-content-header {
+            .navigation {
+                ul {
+                    .current_page_item {
+                        a[aria-current="page"] {
+                            color: $color__main !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.template-contact {
+    background-color: $color__light1;
+    .banner-contact {
+        width: 100%;
+        height: 70vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 80px;
+        overflow: hidden;
+        .group-content {
+            height: 70vh;  
+            width: 100%;
+            padding: 85px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include big_screen {
+                padding: 69px 0;
+            }
+        }
+        .heading {
+            color: $color__light;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            font-family: $font__family-vlbebasneue;
+            &:last-child {
+                margin-top: 10vh;
+            }
+            @include tablet {
+                font-size: 30px;
+                text-align: center !important;
+            }
+        }
+    }
+    h2 {
+        padding: 0 !important;
+        font-size: 40px !important;
+        line-height: 50px !important;
+        @include desktop {
+            font-size: 35px !important;
+            line-height: 45px !important;
+        }
+        @include tablet {
+            font-size: 30px !important;
+        }
+        &::after,
+        &::before {
+            display: none;
+        }
+    }
+    .title-contact {
+        font-size: 35px;
+        margin-bottom: 30px;
+        font-family: $font__family-gilroy-500;
+        strong {
+            font-family: $font__family-gilroy-600;
+        }
+        @include tablet {
+            font-size: 25px;
+        }
+    }
+    .address {
+        margin-bottom: 25px;
+    }
+    .title {
+        font-size: 21px;
+        font-family: $font__family-gilroy-600;
+        margin-bottom: 15px;
+    }
+    .content,
+    .phone,
+    .email {
+        font-family: $font__family-gilroy-400;
+        font-size: 18px;
+        a {
+            &:hover {
+                color: $color__dark !important;
+                text-decoration: underline !important;
+            }
+        }
+    }
+    .icon {
+        width: 18px;
+        height: auto;
+        filter: brightness(0);
+        margin-right: 10px;
+        padding-bottom: 5px;
+    }
+    .icon-location {
+        margin-right: 3px;
+    }
+    .col-right {
+        border-left: 1px solid $color__dark;
+        padding: 0 35px 80px 35px;
+        .title-contact {
+            margin-bottom: 10px;
+            font-size: 30px;
+            @include tablet {
+                font-size: 22px;
+            }
+        }
+        @include tablet {
+            border: none;
+            padding: 0 15px 70px 15px;
+        }
+        .group-company,
+        .personal-group {
+            margin-top: 40px;
+            label {
+                font-size: 16px !important;
+                font-family: $font__family-gilroy-500 !important;
+                width: 100%;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 1px;
+                    bottom: 0;
+                    height: 20px;
+                    width: 1px;
+                    border-left: 1px solid $color__primary;
+                    @include transition(all .3s ease-out);
+                }
+                .text {
+                    text-transform: capitalize;
+                    position: absolute;
+                    top: 16px;
+                    left: 15px;
+                    z-index: 10;
+                    @include transition(all .3s ease-out);
+                    &::after {
+                        content: '*';
+                        font-size: 16px;
+                        color: red;
+                    }
+                }
+            }
+            .active-label {
+                .text {
+                    top: 5px;
+                    text-transform: uppercase;
+                    font-size: 10px !important;
+                    letter-spacing: 1px;
+                    font-family: $font__family-gilroy-600 !important;
+                }
+                &::before {
+                    border-left: 2px solid $color__primary !important;
+                }
+                input,
+                textarea {
+                    border-bottom: 2px solid $color__primary !important;
+                }
+            }
+        }
+        .question {
+            margin-top: 40px;
+            .label {
+                margin-bottom: 30px;
+                font-size: 30px;
+                font-family: $font__family-gilroy-500;
+                @include tablet {
+                    font-size: 22px;
+                }
+            }
+            p {
+                margin-bottom: 40px;
+                .wpcf7-radio {
+                    display: block;
+                }
+                .wpcf7-list-item {
+                    display: block;
+                    margin-left: 0;
+                    label {
+                        cursor: pointer;
+                        font-size: 15px;
+                        font-family: $font__family-gilroy-500;
+                    }
+
+                    input[type=radio] {
+                        border-radius: unset;
+                        border: 1px solid $color__dark;
+                        height: 16px;
+                        width: 16px;
+                        @include transition(all .3s ease-in-out);
+                        margin-right: 8px;
+                        &::after {
+                            content: '✔';
+                            background-color: unset;
+                            left: 1px;
+                            top: -1px;
+                            font-size: 14px;
+                        }
+                        &:checked {
+                            background-color: $color__primary !important;
+                            &::after {
+                                color: $color__light1 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .personal-group {
+            .title-contact {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .col-left {
+        padding-bottom: 50px;
+    }
+}
