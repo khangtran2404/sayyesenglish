@@ -102,7 +102,7 @@ $id_page = get_queried_object()->ID; ?>
                         <?php
                     }
                     ?>
-                    <div class="summary-information-logo" data-aos="fade-up" data-aos-duration="600">
+                    <div class="summary-information-logo">
                         <img src="<?php echo esc_url($summary['logo']['url']); ?>"
                              alt="<?php echo esc_attr($summary['logo']['alt']); ?>"/>
                     </div>

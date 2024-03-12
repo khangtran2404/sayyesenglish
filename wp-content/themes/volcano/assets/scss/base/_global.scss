@@ -3,19 +3,19 @@
 */
 
 body {
-    font-family: $font__family-gilroy-300 !important;
-    color: $color__dark !important;
-    background-color: transparent !important;
-    font-size: 20px !important;
-    line-height: 1.4;
-    margin: 0; 
-    padding: 85px 0 0 0 !important;
-    @include big_screen {
-        padding: 69px 0 0 0 !important;
-    }
-    @include tablet {
-        font-size: 19px !important;
-    }
+  font-family: $font__family-gilroy-300 !important;
+  color: $color__primary3 !important;
+  background-color: transparent !important;
+  font-size: 20px !important;
+  line-height: 1.4;
+  margin: 0;
+  padding: 85px 0 0 0 !important;
+  @include big_screen {
+    padding: 69px 0 0 0 !important;
+  }
+  @include tablet {
+    font-size: 19px !important;
+  }
 }
 h1,
 h2,
@@ -24,474 +24,508 @@ h4,
 h5,
 h6,
 p {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 p {
-    font-family: $font__family-gilroy-300 !important;
-    font-size: 20px !important;
-    line-height: 1.4 !important;
-    @include tablet {
-        font-size: 19px !important;
-    }
+  font-family: $font__family-gilroy-300 !important;
+  font-size: 20px !important;
+  line-height: 1.4 !important;
+  @include tablet {
+    font-size: 19px !important;
+  }
 }
-h1,h2,h3,h4,h5,h6 {
-    font-family: $font__family-gilroy-600 !important;
-    color: $color__primary !important;
-    margin-bottom: 20px !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font__family-gilroy-600 !important;
+  color: $color__primary !important;
+  margin-bottom: 20px !important;
 }
 
 h1 {
-    font-size: 44px !important;
-    line-height: 50px !important;
-    @include tablet {
-        font-size: 32px !important;
-        line-height: 38px !important;
-    }
+  font-size: 44px !important;
+  line-height: 50px !important;
+  @include tablet {
+    font-size: 32px !important;
+    line-height: 38px !important;
+  }
 }
 
 h2 {
-    font-size: 33px !important;
-    line-height: 45px !important;
-    @include tablet {
-        font-size: 25px !important;
-        line-height: 35px !important;
-    }
+  font-size: 33px !important;
+  line-height: 45px !important;
+  @include tablet {
+    font-size: 25px !important;
+    line-height: 35px !important;
+  }
 }
 
 h3 {
-    font-size: 20px !important;
-    line-height: 24px !important;
+  font-size: 20px !important;
+  line-height: 24px !important;
 }
 
 h4 {
-    font-size: 18px !important;
+  font-size: 18px !important;
 }
 
 h5 {
-    font-size: 16px !important;
+  font-size: 16px !important;
 }
 
 h6 {
-    font-size: 14px !important;
+  font-size: 14px !important;
 }
 
 .screen-reader-text {
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    word-wrap: normal;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal;
 }
 
 .site-main {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 .site-logo {
-    margin: 0 !important;
-    .custom-logo {
-        max-width: unset !important;
-        max-height: unset !important;
-    }
+  margin: 0 !important;
+  .custom-logo {
+    max-width: unset !important;
+    max-height: unset !important;
+  }
 }
 
 // remove button form theme default
 .sub-menu-toggle {
-    display: none !important;
+  display: none !important;
 }
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 /* Overwrite Button of parent theme*/
 .content-area {
-    height: auto;
-    min-height: 650px;
-    @media  screen and (max-height: 767px) {
-        min-height: 400px;
+  height: auto;
+  min-height: 650px;
+  @media screen and (max-height: 767px) {
+    min-height: 400px;
+  }
+  .wp-block-button {
+    .wp-block-button__link {
+      border: none !important;
+      color: $color__light !important;
+      background-color: $color__main !important;
+      @include transition(all 0.3s ease-in-out);
+      font-size: 16px !important;
     }
-    .wp-block-button {
-        .wp-block-button__link {
-            border: none !important;
-            color: $color__light !important;
-            background-color: $color__main !important;
-            @include transition(all .3s ease-in-out);
-            font-size: 16px !important;
-        }
+  }
+  .site .button:not(:hover):not(:active):not(.has-background),
+  button:not(:hover):not(:active):not(.has-background),
+  input[type="submit"]:not(:hover):not(:active):not(.has-background),
+  input[type="reset"]:not(:hover):not(:active):not(.has-background),
+  .wp-block-search
+    .wp-block-search__button:not(:hover):not(:active):not(.has-background),
+  .wp-block-button
+    .wp-block-button__link:not(:hover):not(:active):not(.has-background),
+  .wp-block-file
+    a.wp-block-file__button:not(:hover):not(:active):not(.has-background) {
+    border: none !important;
+    color: $color__light !important;
+    background-color: $color__main !important;
+    @include transition(all 0.3s ease-in-out);
+    font-size: 16px !important;
+  }
+  .site .button:hover,
+  .site .button:active,
+  button:hover,
+  button:active,
+  input[type="submit"]:hover,
+  input[type="submit"]:active,
+  input[type="reset"]:hover,
+  input[type="reset"]:active,
+  .wp-block-search .wp-block-search__button:hover,
+  .wp-block-search .wp-block-search__button:active,
+  .wp-block-button .wp-block-button__link:hover,
+  .wp-block-button .wp-block-button__link:active,
+  .wp-block-file a.wp-block-file__button:hover,
+  .wp-block-file a.wp-block-file__button:active {
+    border: none !important;
+    color: $color__light !important;
+    background-color: $color__primary !important;
+    @include transition(all 0.3s ease-in-out);
+    font-size: 16px !important;
+  }
+  .has-background
+    .wp-block-button.is-style-outline
+    .wp-block-button__link:hover,
+  .has-background
+    .wp-block-button.is-style-outline
+    .wp-block-button__link:active,
+  .wp-block-button.is-style-outline .wp-block-button__link:hover,
+  .wp-block-button.is-style-outline .wp-block-button__link:active {
+    color: $color__light !important;
+    background-color: $color__primary !important;
+  }
+  .entry-header,
+  .page-header {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    max-width: 100% !important;
+    h1 {
+      padding-top: 20px !important;
+      margin-bottom: 20px !important;
+      text-align: center;
     }
-    .site .button:not(:hover):not(:active):not(.has-background), button:not(:hover):not(:active):not(.has-background), input[type=submit]:not(:hover):not(:active):not(.has-background), input[type=reset]:not(:hover):not(:active):not(.has-background), .wp-block-search .wp-block-search__button:not(:hover):not(:active):not(.has-background), .wp-block-button .wp-block-button__link:not(:hover):not(:active):not(.has-background), .wp-block-file a.wp-block-file__button:not(:hover):not(:active):not(.has-background) {
-        border: none !important;
-        color: $color__light !important;
-        background-color: $color__main !important;
-        @include transition(all .3s ease-in-out);
-        font-size: 16px !important;
-    }
-    .site .button:hover, .site .button:active, button:hover, button:active, input[type=submit]:hover, input[type=submit]:active, input[type=reset]:hover, input[type=reset]:active, .wp-block-search .wp-block-search__button:hover, .wp-block-search .wp-block-search__button:active, .wp-block-button .wp-block-button__link:hover, .wp-block-button .wp-block-button__link:active, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:active {
-        border: none !important;
-        color: $color__light !important;
-        background-color: $color__primary !important;
-        @include transition(all .3s ease-in-out);
-        font-size: 16px !important;
-    }
-    .has-background .wp-block-button.is-style-outline .wp-block-button__link:hover,
-    .has-background .wp-block-button.is-style-outline .wp-block-button__link:active,
-    .wp-block-button.is-style-outline .wp-block-button__link:hover,
-    .wp-block-button.is-style-outline .wp-block-button__link:active {
-        color: $color__light !important;
-        background-color: $color__primary !important;
-    }
-    .entry-header,
-    .page-header {
-        margin: 0 !important;
-        padding: 0 !important;
-        border: none !important;
-        max-width: 100% !important;
-        h1 {
-            padding-top: 20px !important;
-            margin-bottom: 20px !important;
-            text-align: center;
-        }
-    }
+  }
 }
 
 /* link */
 a {
-   font-family: $font__family-robotos !important;
-   text-decoration: none !important;
-   color: $color__dark !important;
-   @include transition(all .3s ease-in-out);
-   &:hover {
-       text-decoration: none !important;
-       color: $color__main !important;
-   }
-   &:focus {
-       outline: none !important;
-       background: none !important;
-       color: $color__main !important;
-       img {
-            outline: none !important;
-       }
-   }
+  font-family: $font__family-robotos !important;
+  text-decoration: none !important;
+  color: $color__dark !important;
+  @include transition(all 0.3s ease-in-out);
+  &:hover {
+    text-decoration: none !important;
+    color: $color__main !important;
+  }
+  &:focus {
+    outline: none !important;
+    background: none !important;
+    color: $color__main !important;
+    img {
+      outline: none !important;
+    }
+  }
 }
 
 /* edit as admin button*/
 .entry-footer {
-    position: fixed;
-    bottom: 40px !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    left: 40px !important;
-    z-index: 998;
-    border: none !important;
-    .posted-on,
-    .post-taxonomies,
-    .full-size-link,
-    .byline {
-        display: none !important;
-    }
+  position: fixed;
+  bottom: 40px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  left: 40px !important;
+  z-index: 998;
+  border: none !important;
+  .posted-on,
+  .post-taxonomies,
+  .full-size-link,
+  .byline {
+    display: none !important;
+  }
 }
 .post-edit-link {
-    position: relative;
-    display: block;
-    font-size: 0px;
-    width: 40px;
-    height: 40px;
-    background-color: $color__main !important;
-    @include transition(all .3s ease-in-out);
-    border-radius: 50%;
-    &::after {
-        position: absolute;
-        content: url('../images/icon-edit.png');
-        top: 48%;
-        left: 54%;
-        display: inline-block;
-        @include translate(-50%,-50%);
-        filter:  brightness(0) invert(1);
-    }
-    &:hover {
-        background-color: $color__primary !important;
-    }
-    @include mobile {
-        display: none;
-    }
+  position: relative;
+  display: block;
+  font-size: 0px;
+  width: 40px;
+  height: 40px;
+  background-color: $color__main !important;
+  @include transition(all 0.3s ease-in-out);
+  border-radius: 50%;
+  &::after {
+    position: absolute;
+    content: url("../images/icon-edit.png");
+    top: 48%;
+    left: 54%;
+    display: inline-block;
+    @include translate(-50%, -50%);
+    filter: brightness(0) invert(1);
+  }
+  &:hover {
+    background-color: $color__primary !important;
+  }
+  @include mobile {
+    display: none;
+  }
 }
 .post-thumbnail {
+  margin: 0 !important;
+  .wp-post-image {
     margin: 0 !important;
-    .wp-post-image {
-        margin: 0 !important;
-    }
+  }
 }
 /* Button volcano*/
 .button-volcano {
-    display: flex;
-    width: fit-content;
-    align-items: center;
-    padding: 5px;
-    border: 2px solid $color__primary !important;
-    border-radius: 100px;
-    color: $color__primary !important;
-    letter-spacing: 4px;
-    font-family: $font__family-gilroy-600 !important;
-    font-size: 18px !important;
-    margin: 30px 0;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  padding: 5px;
+  border: 2px solid $color__primary !important;
+  border-radius: 100px;
+  color: $color__primary !important;
+  letter-spacing: 4px;
+  font-family: $font__family-gilroy-600 !important;
+  font-size: 18px !important;
+  margin: 30px 0;
+  @include tablet {
+    font-size: 16px !important;
+    letter-spacing: 3px;
+    margin: 30px auto;
+  }
+  .text {
+    display: block;
+    padding: 0 35px 0 20px;
+    text-transform: uppercase;
     @include tablet {
-        font-size: 16px !important;
-        letter-spacing: 3px;
-        margin: 30px auto;
+      padding: 0 30px 0 15px;
     }
-    .text {
-        display: block;
-        padding: 0 35px 0 20px;
-        text-transform: uppercase;
-        @include tablet {
-            padding: 0 30px 0 15px;
-        }
-    }
-    .arrow-line {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        background-color: $color__primary !important;
-        img {
-            @include transition(all .3s ease-in-out);
-        }
-    }
-    &:hover {
-        .arrow-line {
-            img {
-                @include rotate(360);
-            }
-        }
-    }
-}
-.box-magic-title {
-    width: fit-content !important;
-    margin: 0 auto 50px auto !important;
-    position: relative;
-    h2 {
-        font-family: $font__family-gilroy-900 !important;
-        position: relative;
-        text-align: center;
-        padding: 0 18px 23px 18px !important;
-        width: fit-content !important;
-        font-weight: 700 !important;
-        font-size: 50px !important;
-        line-height:  62px !important;
-        background-color: $color__light1;
-        z-index: 2;
-        @include desktop {
-            padding: 0 15px 22px 15px !important;
-        }
-        &::before {
-            top: 51%;
-            left: 0;
-            @include translate(0, -50%);
-            position: absolute;
-            content: '';
-            width: 8px;
-            height: 8px;
-            background-color: $color__primary;
-            border-radius: 50%;
-        }
-        &::after {
-            top: 51%;
-            right: 0;
-            @include translate(0, -50%);
-            position: absolute;
-            content: '';
-            width: 8px;
-            height: 8px;
-            background-color: $color__primary;
-            border-radius: 50%;
-        }
-        .magic {
-            font-family: $font__family-Matsury !important;
-            font-size: 130px;
-            font-weight: 500;
-            margin-left: -55px;
-        }
-        @include tablet {
-            font-size: 35px !important;
-            line-height: 55px !important;
-            .magic {
-                font-size: 90px;
-                margin-left: -40px;
-            }
-        }
-        @include mobile {
-            font-size: 28px !important;
-            line-height: 45px !important;
-        }
-
-    }
-    .border-mgic-box {
-        width: calc(100% + 60px);
-        height: 53%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        @include translate(-50%, 0);
-        border-radius: 10px;
-        border: 2px solid $color__primary;
-        z-index: 1;
-        @include desktop {
-            width: calc(100% + 35px);
-        }
-        @include mobile {
-            width: calc(100% + 25px);
-        }
-    }
-}
-html[lang="vi"] {
-    .box-magic-title {
-        .magic {
-            margin-left: -20px;
-        }
-    }
-}
-
-.modal-backdrop {
-    opacity: 0.75 !important;
-}
-/* button scroll top */
-.scroll-top {
-    width: 40px;
-    height: 40px;
+  }
+  .arrow-line {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $color__main;
-    position: fixed;
-    right: 40px;
-    bottom: 40px;
-    opacity: 0;
-    visibility: hidden;
-    cursor: pointer;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    z-index: 998;
-    @include transition(all .3s ease-in-out);
+    background-color: $color__primary !important;
     img {
-        width: 6px;
-        @include rotate(90);
+      @include transition(all 0.3s ease-in-out);
     }
-    &:hover {
-        background-color: $color__primary;
+  }
+  &:hover {
+    .arrow-line {
+      img {
+        @include rotate(360);
+      }
     }
-    &:focus {
-        background-color: $color__primary !important;
+  }
+}
+.box-magic-title {
+  width: fit-content !important;
+  margin: 0 auto 50px auto !important;
+  position: relative;
+  h2 {
+    font-family: $font__family-gilroy-900 !important;
+    position: relative;
+    text-align: center;
+    padding: 0 18px 23px 18px !important;
+    width: fit-content !important;
+    font-weight: 700 !important;
+    font-size: 50px !important;
+    line-height: 62px !important;
+    background-color: $color__light1;
+    z-index: 2;
+    @include desktop {
+      padding: 0 15px 22px 15px !important;
     }
-
+    &::before {
+      top: 51%;
+      left: 0;
+      @include translate(0, -50%);
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: $color__primary;
+      border-radius: 50%;
+    }
+    &::after {
+      top: 51%;
+      right: 0;
+      @include translate(0, -50%);
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: $color__primary;
+      border-radius: 50%;
+    }
+    .magic {
+      font-family: $font__family-Matsury !important;
+      font-size: 130px;
+      font-weight: 500;
+      margin-left: -55px;
+    }
+    @include tablet {
+      font-size: 35px !important;
+      line-height: 55px !important;
+      .magic {
+        font-size: 90px;
+        margin-left: -40px;
+      }
+    }
     @include mobile {
-        display: none;
+      font-size: 28px !important;
+      line-height: 45px !important;
     }
+  }
+  .border-mgic-box {
+    width: calc(100% + 60px);
+    height: 53%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, 0);
+    border-radius: 10px;
+    border: 2px solid $color__primary;
+    z-index: 1;
+    @include desktop {
+      width: calc(100% + 35px);
+    }
+    @include mobile {
+      width: calc(100% + 25px);
+    }
+  }
+}
+html[lang="vi"] {
+  .box-magic-title {
+    .magic {
+      margin-left: -20px;
+    }
+  }
+}
+
+.modal-backdrop {
+  opacity: 0.75 !important;
+}
+/* button scroll top */
+.scroll-top {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color__main;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 998;
+  @include transition(all 0.3s ease-in-out);
+  img {
+    width: 6px;
+    @include rotate(90);
+  }
+  &:hover {
+    background-color: $color__primary;
+  }
+  &:focus {
+    background-color: $color__primary !important;
+  }
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .active-scroll-top {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .entry-header,
 .entry-footer,
 .wp-block-group,
-.wp-block-columns,figure,
+.wp-block-columns,
+figure,
 .wp-block-cover {
-    max-width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .entry-content {
-    .wp-block-group {
-        margin-top: 0 !important;
-    }
-    .wp-block-cover {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
+  .wp-block-group {
+    margin-top: 0 !important;
+  }
+  .wp-block-cover {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
-*:focus { 
-    outline: 0 !important;
+*:focus {
+  outline: 0 !important;
 }
- //== Firfox and safari ==//
- * {
-    scrollbar-width: thin; // (variable: none, thin, auto)
-    scrollbar-color:  $color__light1 $color__light;
+//== Firfox and safari ==//
+* {
+  scrollbar-width: thin; // (variable: none, thin, auto)
+  scrollbar-color: $color__light1 $color__light;
 }
 //== Chrome, edge ==//
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px $color__light; 
-    border-radius: 10px;
+  box-shadow: inset 0 0 5px $color__light;
+  border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $color__light1; 
-    border-radius: 10px;
+  background: $color__light1;
+  border-radius: 10px;
 }
 .container-volcano {
-    .wp-block-group__inner-container,
-    .wp-block-cover__inner-container {
-        h1,h2,h3,h4,h5,h6 {
-            margin-bottom: 0 !important;
-        }
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-        @media (min-width: 576px) {
-            max-width: 540px;
-        }
-        @media (min-width: 768px) {
-            max-width: 720px;
-        }
-        @media (min-width: 992px) {
-            max-width: 960px;
-        }
-        @media (min-width: 1200px) {
-            max-width: 1140px;
-        }
-        @media screen and (min-width: 1440px) {
-            max-width: 1270px;
-        }
-        @media screen and (min-width: 1600px) {
-            max-width: 1500px;
-        }
+  .wp-block-group__inner-container,
+  .wp-block-cover__inner-container {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 0 !important;
     }
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    @media (min-width: 576px) {
+      max-width: 540px;
+    }
+    @media (min-width: 768px) {
+      max-width: 720px;
+    }
+    @media (min-width: 992px) {
+      max-width: 960px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+    }
+    @media screen and (min-width: 1440px) {
+      max-width: 1270px;
+    }
+    @media screen and (min-width: 1600px) {
+      max-width: 1500px;
+    }
+  }
 }
-
 
 /*container 1240 on screen 1440px*/
 @media screen and (min-width: 1440px) {
-    .container {
-        max-width: 1270px;
-    }
+  .container {
+    max-width: 1270px;
+  }
 }
 
 @media screen and (min-width: 1600px) {
-    .container {
-        max-width: 1500px;
-    }
+  .container {
+    max-width: 1500px;
+  }
 }
-
