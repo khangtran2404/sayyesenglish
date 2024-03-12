@@ -197,16 +197,16 @@ h6 {
 a {
   font-family: $font__family-robotos !important;
   text-decoration: none !important;
-  color: $color__dark !important;
+  color: $color__primary3 !important;
   @include transition(all 0.3s ease-in-out);
   &:hover {
     text-decoration: none !important;
-    color: $color__main !important;
+    color: $color__primary !important;
   }
   &:focus {
     outline: none !important;
     background: none !important;
-    color: $color__main !important;
+    color: $color__primary !important;
     img {
       outline: none !important;
     }

@@ -70,7 +70,7 @@
 				</div>
 			</div>
 			<div class="copyright-footer">
-				<p class="copyright"><?= __('© 2022 Volcano Creative All right reserved.','volcano');?></p>
+				<p class="copyright"><?= __('© 2024. All rights reserved.','volcano');?></p>
 			</div>
 		</div>
 	</footer><!-- #colophon -->

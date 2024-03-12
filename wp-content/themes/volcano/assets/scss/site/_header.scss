@@ -110,11 +110,11 @@
           a {
             display: flex;
             line-height: 1;
-            border: 1px solid $color__dark;
+            border: 1px solid $color__primary3;
             padding: 4px 5px 3px 5px;
             border-radius: 6px;
             &:hover {
-              border-color: $color__main;
+              border-color: $color__primary;
             }
             font-size: 16px !important;
             @include big_screen {
@@ -190,7 +190,7 @@
       ul {
         .current_page_item {
           a[aria-current="page"] {
-            color: $color__primary2 !important;
+            color: $color__primary !important;
           }
         }
       }
@@ -259,7 +259,7 @@
       }
       .current_page_item {
         a[aria-current="page"] {
-          color: $color__primary2 !important;
+          color: $color__primary !important;
         }
       }
     }
