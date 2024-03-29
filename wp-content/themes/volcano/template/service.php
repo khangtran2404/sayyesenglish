@@ -2,7 +2,7 @@
 /* Template Name: Service template */
 
 $id_home_page = get_option('page_on_front');
-
+$test = 1;
 get_header();
 $id_page = get_queried_object()->ID; ?>
     <div class="template-service">
