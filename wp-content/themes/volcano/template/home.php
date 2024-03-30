@@ -201,13 +201,45 @@ $id_page = get_queried_object()->ID; ?>
                 </div>
             </div>
         </div>
-        <!-- End services section -->
-        <div class="content-video">
-            <source src="https://sayyesenglish.com/wp-content/uploads/2024/03/homevideo1.mp4" type="video/mp4">
-            <source src="https://sayyesenglish.com/wp-content/uploads/2024/03/homevideo2.mp4" type="video/mp4">
+        <div class="posts-homepage-group">
+            <div class="bg-post-tile">
+                <div class="container">
+                    <div class="box-magic-title wow animate__lightSpeedInLeft" data-wow-delay="1s">
+                        <div class="border-mgic-box"></div>
+                        <h2>
+                            <?= "Review của học viên" ?>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="review-videos" style="text-align: center">
+                    <video width="500" height="350" controls>
+                        <source src="https://sayyesenglish.com/wp-content/uploads/2024/03/homevideo1.mp4" type="video/mp4">
+                    </video>
+                    <video width="500" height="350" controls>
+                        <source src="https://sayyesenglish.com/wp-content/uploads/2024/03/homevideo2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
         </div>
-        <div class="zalo-qr">
-            <img src="https://sayyesenglish.com/wp-content/uploads/2024/03/zaloqr.jpg" alt="zalo-qr">
+        <!-- End services section -->
+        <div class="partner-homepage">
+            <div class="bg-post-tile">
+                <div class="container">
+                    <div class="box-magic-title wow animate__lightSpeedInLeft" data-wow-delay="1s">
+                        <div class="border-mgic-box"></div>
+                        <h2>
+                            <?= "QR Liên Hệ qua Zalo" ?>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="zalo-qr" style="text-align: center">
+                    <img width="500" height="350" src="https://sayyesenglish.com/wp-content/uploads/2024/03/zaloqr.jpg" alt="zalo-qr">
+                </div>
+            </div>
         </div>
     </div>
 <?php get_footer();

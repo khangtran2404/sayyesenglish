@@ -57,14 +57,6 @@
 							?>
 						</nav><!-- #site-navigation -->
 					<?php endif; ?>
-					<!-- language switcher -->
-					<div class="language-switcher-arae">
-						<?php 
-							if ( is_active_sidebar( 'widget-switcher-area' )) :
-								dynamic_sidebar( 'widget-switcher-area' );
-							endif; 
-						?>
-					</div>
 				</div>
 				
 				<!-- Button Hamburger -->
@@ -90,14 +82,6 @@
 					?>
 				</nav><!-- #site-navigation -->
 			<?php endif; ?>
-			<!-- language switcher -->
-			<div class="language-switcher-arae">
-				<?php 
-					if ( is_active_sidebar( 'widget-switcher-area' )) :
-						dynamic_sidebar( 'widget-switcher-area' );
-					endif; 
-				?>
-			</div>
 		</div>
 	</div>
 	<div id="content" class="site-content">
