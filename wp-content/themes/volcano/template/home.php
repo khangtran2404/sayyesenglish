@@ -134,7 +134,7 @@ $id_page = get_queried_object()->ID; ?>
                         </div>
                     </div>
                 </div>
-                <?php if ($summary['counter']): ?>
+                <!-- <?php if ($summary['counter']): ?>
                     <div class="counter-content">
                         <div class="container">
                             <div class="row row-custom">
@@ -159,7 +159,7 @@ $id_page = get_queried_object()->ID; ?>
                             </div>
                         </div>
                     </div>
-                <?php endif; ?>
+                <?php endif; ?> -->
             <?php endif; ?>
         </div>
         <!-- End summary section -->
@@ -213,13 +213,17 @@ $id_page = get_queried_object()->ID; ?>
                 </div>
             </div>
             <div class="container">
-                <div class="review-videos" style="text-align: center">
-                    <video width="500" height="350" controls>
-                        <source src="https://sayyesenglish.com/wp-content/uploads/2024/03/homevideo1.mp4" type="video/mp4">
-                    </video>
-                    <video width="500" height="350" controls>
-                        <source src="https://sayyesenglish.com/wp-content/uploads/2024/03/homevideo2.mp4" type="video/mp4">
-                    </video>
+                <div class="review-videos">
+                    <div class="col-video">
+                        <video controls>
+                            <source src="https://sayyesenglish.com/wp-content/uploads/2024/03/homevideo1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-video">
+                        <video controls>
+                            <source src="https://sayyesenglish.com/wp-content/uploads/2024/03/homevideo2.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>

@@ -453,6 +453,23 @@ figure,
   }
 }
 
+.review-videos {
+  display: flex;
+  justify-content: center;
+  @include tablet {
+    display: block;
+  }
+  .col-video {
+    margin: 0 5px;
+    @include tablet {
+      margin: 0 0 5px 0;
+    }
+    video {
+      width: 100%;
+    }
+  }
+}
+
 *:focus {
   outline: 0 !important;
 }
