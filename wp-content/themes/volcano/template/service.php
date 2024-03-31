@@ -133,10 +133,15 @@ $id_page = get_queried_object()->ID; ?>
                         <?php if($group['posts']):?>
                         <div class="post-list">
                             <?php
-                            foreach ($group['posts'] as $key=> $post): $key++;?>
-                            <div data-title="<?= $post['title'] ?>" 
-                            data-detail="<?= $post['detail'] ?>" 
-                            data-thumbnail="<?= $post['thumbnail']['image_thumbnail']['url'] ?>" 
+                            foreach ($group['posts'] as $key=> $post): $key++;
+                                $thumbnailImages = $post['thumbnail']['image_thumbnail'];
+                            foreach ($thumbnailImages as $image){
+                                $thumbnailImageUrls[] = $image['url'];
+                            }
+                            ?>
+                            <div data-title="<?= $post['title'] ?>"
+                            data-detail="<?= $post['detail'] ?>"
+                            data-thumbnail="<?= implode(',',$thumbnailImageUrls) ?>"
                             class="service-post-item wow animate__fadeInUp" data-wow-delay="1s">
                                 <div class="cont-img">
                                     <img src="<?= $post['thumbnail']['image_thumbnail']['url'] ?>" alt="service-post-thumbnail">

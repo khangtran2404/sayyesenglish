@@ -362,7 +362,7 @@
                                     "key": "field_62b3dc5a1b67c",
                                     "label": "image",
                                     "name": "image_thumbnail",
-                                    "type": "image",
+                                    "type": "gallery",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -373,7 +373,10 @@
                                     },
                                     "return_format": "array",
                                     "preview_size": "medium",
+                                    "insert": "append",
                                     "library": "all",
+                                    "min": "",
+                                    "max": "",
                                     "min_width": "",
                                     "min_height": "",
                                     "min_size": "",
@@ -516,5 +519,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655954590
+    "modified": 1711816528
 }
