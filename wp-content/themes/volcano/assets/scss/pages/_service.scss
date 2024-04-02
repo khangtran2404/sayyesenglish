@@ -378,6 +378,9 @@
     margin: 7vh auto 7vh auto;
     max-width: 70vw;
     position: relative;
+    @include big_screen {
+      max-width: 90vw;
+    }
     @include desktop {
       max-width: 80vw;
     }
@@ -416,6 +419,50 @@
     overflow-y: auto;
     overflow-x: hidden;
     .modal-body {
+      .slick-dots {
+        position: absolute;
+        display: flex;
+        list-style: none;
+        height: 10px;
+        left: 50%;
+        bottom: 40px;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        @include translate(-50%, 0);
+        li {
+          margin: 0 5px;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          button {
+            width: 9px;
+            height: 9px;
+            font-size: 0 !important;
+            padding: 0 !important;
+            border-radius: 50%;
+            background-color: $color__light1 !important;
+            @include transition(all 0.3s ease-in-out);
+            &:focus {
+              outline: none;
+            }
+            &:hover {
+              background-color: $color__primary !important;
+            }
+          }
+          button[aria-label="1 of 1"] {
+            display: none;
+          }
+        }
+        .slick-active {
+          button {
+            background-color: $color__primary !important;
+          }
+        }
+      }
       padding: 0;
       margin: 0;
     }
@@ -724,11 +771,14 @@
       height: 45px;
       background-size: contain;
       border: none;
-      background-repeat: no-repeat;
-      background-color: transparent !important;
       border: 1px solid $color__light1 !important;
-      z-index: 1;
       border-radius: 50% !important;
+      background-size: 8px auto;
+      background-repeat: no-repeat;
+      background-color: $color__main !important;
+      background-image: url("../images/arrow-right.png");
+      background-position: center;
+      z-index: 1;
       &:hover {
         border: 1px solid $color__primary !important;
       }
@@ -737,11 +787,10 @@
       }
     }
     .slick-next {
-      background-image: url("../images/button-slider-next.png");
       right: -45px;
     }
     .slick-prev {
-      background-image: url("../images/button-slider-prev.png");
+      background-image: url("../images/arrow-left.png");
       left: -45px;
     }
     .slick-dots {

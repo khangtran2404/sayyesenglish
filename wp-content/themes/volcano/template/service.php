@@ -143,11 +143,11 @@ $id_page = get_queried_object()->ID; ?>
                                         ?>
                                         <div data-title="<?= $post['title'] ?>"
                                              data-detail="<?= $post['detail'] ?>"
-                                             data-thumbnail="<?= $post['thumbnail']['image_thumbnail']['url'] ?>"
+                                             data-thumbnail="<?= $post['thumbnail']['image_thumbnail'] ? $post['thumbnail']['image_thumbnail']['url'] : DF_IMAGE .'/noimage.png'; ?>"
                                              data-gallery="<?= htmlspecialchars($json_data, ENT_QUOTES, 'UTF-8'); ?>"
                                              class="service-post-item wow animate__fadeInUp" data-wow-delay="1s">
                                             <div class="cont-img">
-                                                <img src="<?= $post['thumbnail']['image_thumbnail']['url'] ?>"
+                                                <img src="<?= $post['thumbnail']['image_thumbnail'] ? $post['thumbnail']['image_thumbnail']['url'] : DF_IMAGE .'/noimage.png';  ?>"
                                                      alt="service-post-thumbnail">
                                                 <?php
                                                 if ($post['thumbnail']['movie_text']) { ?>
@@ -267,7 +267,7 @@ $id_page = get_queried_object()->ID; ?>
                         <div class="col-md-6 col-sm-12 service-post-content">
                             <div class="group-content">
                                 <div class="icon">
-                                    <img height="65"
+                                    <img style="height: 65px; width:auto"
                                          src="<?= get_field('banner_top_service_provider', $id_page)['icon_quote']['url'] ?>"
                                          alt="icon">
                                 </div>
